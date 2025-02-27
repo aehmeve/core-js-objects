@@ -180,7 +180,7 @@ function makeWord(lettersObject) {
 function sellTickets(queue) {
   let change25 = 0;
   let change50 = 0;
-  let isAbletoSell = true;
+  let isAbleToSell = true;
 
   for (let i = 0; i < queue.length; i += 1) {
     if (queue[i] === 25) change25 += 1;
@@ -190,7 +190,7 @@ function sellTickets(queue) {
         change25 -= 1;
         change50 += 1;
       } else {
-        isAbletoSell = false;
+        isAbleToSell = false;
         break;
       }
     }
@@ -202,13 +202,13 @@ function sellTickets(queue) {
       } else if (change25 >= 3) {
         change25 -= 3;
       } else {
-        isAbletoSell = false;
+        isAbleToSell = false;
         break;
       }
     }
   }
 
-  return isAbletoSell;
+  return isAbleToSell;
 }
 
 /**
